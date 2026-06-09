@@ -8,3 +8,7 @@ def test_sum_3_3_equals_6():
 
 def test_sum_m1_1_equals_0():
     assert sum(-1,1) == 0
+
+def test_args():
+  numbers = [1, 2]
+  assert sum(*numbers) == 3
