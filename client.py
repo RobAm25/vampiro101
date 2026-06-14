@@ -2,6 +2,7 @@ from apiclient import APIClient
 from apiclient.response_handlers import JsonResponseHandler
 from pprint import pprint
 
+
 class MyClient(APIClient):
 
     BASE_URL = 'https://data-api.polymarket.com/v1'
@@ -55,6 +56,8 @@ def main():
 if __name__ == "__main__":
   main()
 
+# Example usage: Change the filename as needed
+#file_path = "C:/Users/rober/Documents/Python Scripts/Polymarket/Proyecto Polymarket - 06102026.xlsx"  # Update this with your actual file path
 
   
 
