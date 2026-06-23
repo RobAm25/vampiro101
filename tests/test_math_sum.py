@@ -11,4 +11,4 @@ def test_sum_m1_1_equals_0():
 
 def test_args():
   numbers = [1, 2]
-  assert sum(*numbers) == 4
+  assert sum(*numbers) == 3
