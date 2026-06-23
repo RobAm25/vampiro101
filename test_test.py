@@ -153,3 +153,68 @@ for x in fruits:
        newlist.append(x)
 
 print(newlist)
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = [x for x in fruits if "a" in x]
+print(newlist)
+
+#Sort the list numerically:
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+#Sort the list descending:
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+#Perform a case-insensitive sort of the list:
+thislist = ["banana", "Orange", "Kiwi", "cherry"]
+thislist.sort(key = str.lower)
+print(thislist)
+
+#Make a copy of a list with the copy() method:
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+
+#Make a copy of a list with the : operator:
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist[:]
+print(mylist)
+
+#Convert the tuple into a list to be able to change it:
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+print(x)
+
+#Convert the tuple into a list, add "orange", and convert it back into a tuple:
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.append("orange")
+thistuple = tuple(y)
+
+#Convert the tuple into a list, remove "apple", and convert it back into a tuple:
+thistuple = ("apple", "banana", "cherry")
+y = list(thistuple)
+y.remove("apple")
+thistuple = tuple(y)
+
+#Loop through the items and print the values:
+thistuple = ("apple", "banana", "cherry")
+for x in thistuple:
+  print(x)
+
+#Print all items by referring to their index number:
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+  print(thistuple[i])
+
+#Print all items, using a while loop to go through all the index numbers:
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])
+  i = i + 1
