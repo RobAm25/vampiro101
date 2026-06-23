@@ -1,8 +1,16 @@
 name: "Continuous Integration"
+
 on: 
-  push: 
+  pull_request:
+  push:
+    branches:
+      - main 
   workflow_dispatch:  # Allows you to run this workflow manually from the Actions tab
 
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+ 
 permissions: 
   contents: read
 
